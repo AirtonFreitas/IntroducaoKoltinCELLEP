@@ -1,5 +1,6 @@
 package com.iasoftwares.appestacaohack
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,11 +25,17 @@ class LoginActivity : AppCompatActivity() {
                 binding.editLoginSenha.requestFocus()
             } else {
 
-                if (email == "teste@teste.com" && senha == "123456") {
+                val sharedPrefs = getSharedPreferences("cadastro_$email", Context.MODE_PRIVATE)
+
+                val emailPrefs = sharedPrefs.getString("EMAIL", "")
+                val senhaPrefs = sharedPrefs.getString("SENHA", "")
+
+                if (email == emailPrefs && Hash().md5(senha) == senhaPrefs) {
                     Toast.makeText(this, "Usuário Logado", Toast.LENGTH_SHORT).show()
                     val mIntent = Intent(this, MainActivity::class.java)
+                    mIntent.putExtra("INTENT_EMAIL", email)
                     startActivity(mIntent)
-                   finish()
+                    finish()
                 } else {
                     Toast.makeText(this, "E-mail ou Senha inválidos", Toast.LENGTH_SHORT).show()
                 }
@@ -36,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        binding.btnCadastrar.setOnClickListener{
+        binding.btnCadastrar.setOnClickListener {
             val mIntent = Intent(this, CadastroActivity::class.java)
             startActivity(mIntent)
         }

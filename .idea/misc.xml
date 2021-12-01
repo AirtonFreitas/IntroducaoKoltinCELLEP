@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2777777777777778" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/activity_main.xml" value="0.28425925925925927" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/activity_main1.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/activity_web.xml" value="0.28125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/cadastro_activity.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AppEstacaoHack/app/src/main/res/layout/layout_branco_item.xml" value="0.1762917933130699" />
       </map>
     </option>
   </component>
